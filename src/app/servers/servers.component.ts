@@ -21,7 +21,7 @@ export class ServersComponent implements OnInit {
   onReload() {
     // use relativeTo to navigate the path relative to the current route. If removes then the navigate won't be able to judge the
     // current route.
-    this.router.navigate(['servers'], {relativeTo: this.route});
+    // this.router.navigate(['servers'], {relativeTo: this.route});
   }
 
 }
