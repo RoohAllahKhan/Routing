@@ -33,7 +33,9 @@ const appRoutes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(appRoutes)
+    // this is Hash mode routing, it informs your web server that only care about the part in this URL before this hashtag.
+    // The part after the hashtag can now be parsed by the client, by Angular
+    RouterModule.forRoot(appRoutes, {useHash: true})
   ],
   exports: [RouterModule]
 })
